@@ -14,12 +14,16 @@ public class GuessingGame {
 			System.out.println("You won!");
 		}
 		else if(numberGuessed == 0){
-	System.out.println("Pick a number");
+	System.out.println("Pick a number between 1 and 10.");
 }
-			else {
-				System.out.println("Guess a number between 1 - 10. ");
-			}
+			else 
+				System.out.println("You lose");
+		
+		else if(numberGuessed != 7){
+			System.out.println("Try one more time");
+		
 			
+		
 		input.close();
 		
 	}
