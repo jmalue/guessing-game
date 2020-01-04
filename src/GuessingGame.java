@@ -7,22 +7,21 @@ public class GuessingGame {
 
 		
 		Scanner input = new Scanner(System.in);
+		
 		System.out.println("Pick a number");
 		int numberGuessed = input.nextInt();
 		if(numberGuessed == 7) {
 			System.out.println("You won!");
 		}
+		else if(numberGuessed == 0){
+	System.out.println("Pick a number");
+}
 			else {
-				System.out.println("you lost!");
+				System.out.println("Guess a number between 1 - 10. ");
 			}
-		
-	
-
-		
-		
-		
+			
 		input.close();
 		
 	}
-}
 
+}
