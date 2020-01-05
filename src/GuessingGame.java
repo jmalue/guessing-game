@@ -20,7 +20,13 @@ public class GuessingGame {
 		}
 		else if(numberGuessed == 0){
 	System.out.println("Pick a number between 1 and 10. You get one more pick.");
-}
+        }
+		else if((numberGuessed >=1) && (numberGuessed <=6)) {
+		     System.out.println("Secrect Number is > than number chosen.");
+	    }
+         else if((numberGuessed >=8) && (numberGuessed <=10)) {
+		     System.out.println("Secrect Number is < than number chosen.");
+         }
 			else {
 				System.out.println("You lose but try one more time.");
 	}
