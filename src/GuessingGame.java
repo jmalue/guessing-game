@@ -15,6 +15,9 @@ public class GuessingGame {
 			System.out.println("You won!");
 			System.exit(0);
 		}
+		else if(numberGuessed == -1){
+			System.exit(0);
+		}
 		else if(numberGuessed == 0){
 	System.out.println("Pick a number between 1 and 10. You get one more pick.");
 }
